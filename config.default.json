@@ -1,10 +1,10 @@
 {
   "server_port": 38383,
-  "password": "fuckgfw",
+  "password": "FebEAeuJVBnpFoJob8",
   "timeout": 3000,
   "method": "aes-256-cfb",
-  "obfs": "tls1.2_ticket_fastauth_compatible",
-  "obfs_param": "fuckgfw",
+  "obfs": "tls1.2_ticket_auth",
+  "obfs_param": "FebEAeuJVBnpFoJob8",
   "nameserver": "8.8.8.8",
   "server": "0.0.0.0"
 }

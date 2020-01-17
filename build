@@ -1,0 +1,15 @@
+#!/bin/bash
+
+docker build -t luweiss-docker-shadowsocks-libev .
+
+if [ ! -d config ]
+  then
+    mkdir config
+fi
+
+if [ ! -f config/config.json ]
+  then
+    cp config.default.json config/config.json
+fi
+
+echo -e "\033[32m Docker Shadowsocks-libev build successful. \033[0m"

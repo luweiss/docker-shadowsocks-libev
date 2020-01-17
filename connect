@@ -1,0 +1,2 @@
+#!/bin/bash
+docker exec -it luweiss-docker-shadowsocks-libev /bin/sh

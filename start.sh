@@ -17,7 +17,7 @@ name=$(get_value name)
 
 docker stop $name
 docker container rm $name
-docker run --restart=always --name $name -e PASSWORD=$password -p$port:8388 -p$port:8388/udp -d shadowsocks/shadowsocks-libev
+docker run --restart=always --name $name -m $method -e PASSWORD=$password -p$port:8388 -p$port:8388/udp -d shadowsocks/shadowsocks-libev
 docker ps | grep $name
 echo 'password:' $password
 echo 'port:' $port

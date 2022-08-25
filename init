@@ -1,6 +1,0 @@
-#!/bin/bash
-basepath=$(cd `dirname $0`; pwd)
-docker stop luweiss-docker-shadowsocks-libev
-docker rm luweiss-docker-shadowsocks-libev
-docker run --name luweiss-docker-shadowsocks-libev -v $basepath/config:/etc/shadowsocks-libev -p38383:38383 -p38383:38383/udp -d luweiss-docker-shadowsocks-libev
-docker ps
